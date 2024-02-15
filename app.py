@@ -61,13 +61,13 @@ def rt_chart(City):
     filtered_data = City[(City['year'] == Year) & (City['month'] == Month)]
 
     # Rainfall line chart
-    st.write('Rainfall Trend:')
-    rain_chart = alt.Chart(filtered_data).mark_line().encode(
-        x='date',
-        y='rainfall',
-        tooltip=['date', 'rainfall']
-    ).properties(height=300, width=600)
-    st.altair_chart(rain_chart)
+    # st.write('Rainfall Trend:')
+    # rain_chart = alt.Chart(filtered_data).mark_line().encode(
+    #     x='date',
+    #     y='rainfall',
+    #     tooltip=['date', 'rainfall']
+    # ).properties(height=300, width=600)
+    # st.altair_chart(rain_chart)
 
     # 3D Scatter plot
     st.header('3D Scatter Plot')
