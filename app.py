@@ -110,14 +110,14 @@ def rt_chart(City):
                   value=City[City['year'] == Year]['min_temp'].min())
 
     #Average tempertaure bar chartt 
-    st.write('Average Temperature Trend:')
-    temp_chart = alt.Chart(City).mark_rect().encode(
-        x='date:O',
-        y='month:O',
-        color=alt.Color('avg_temp', scale=alt.Scale(scheme="inferno")),
-        tooltip=['date', 'avg_temp']
-    ).properties(height=400, width=800)
-    st.altair_chart(temp_chart)
+    # st.write('Average Temperature Trend:')
+    # temp_chart = alt.Chart(City).mark_rect().encode(
+    #     x='date:O',
+    #     y='month:O',
+    #     color=alt.Color('avg_temp', scale=alt.Scale(scheme="inferno")),
+    #     tooltip=['date', 'avg_temp']
+    # ).properties(height=400, width=800)
+    # st.altair_chart(temp_chart)
      
     
     
